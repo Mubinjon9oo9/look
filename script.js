@@ -1,3 +1,7 @@
+$(document).ready(function (){
+    $('.slider').slick();
+});
+
 function func(){
     document.getElementById('myPopup').style.display="table-cell"
     document.getElementById('myPopup').style.verticalAlign="middle"
