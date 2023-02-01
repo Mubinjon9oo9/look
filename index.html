@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="myPopup">
+    <div class="box">
+        <form class="fo">
+            <div class="back">
+                <h3 class="btext">Нужен праздник</h3>
+                <p class="btext1">Получить условия</p>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Имя">
+            <div class="errorN">Ошибка! Заполните поле правильно</div>
+            <input type="number" name="number" id="number" placeholder="+7 (___) ___-__-__">
+            <div class="errorNum">Ошибка! Введите только числа</div>
+            <input type="date" name="date" id="date">
+            <div class="errorD">Ошибка! Неверная дата</div>
+            <input type="number" name="quantity" id="quantity" placeholder="Количество людей">
+            <div class="errorQ">Ошибка! Слишком мало людей для события</div>
+            <input type="button" name="send" id="send" value="ЖДУ ОТВЕТА" onclick="return se()">
+        </form>
+    </div>
+</div>
+<img src="images/1.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">детский день рождения</h2>
+        <ul>
+            <li class="texts">Площадка</li>
+            <li class="texts">Программа / активная часть</li>
+            <li class="texts">Праздничный стол</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/2.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">детский день рождения</h2>
+        <ul>
+            <li class="texts">Площадка</li>
+            <li class="texts">Программа / активная часть</li>
+            <li class="texts">Праздничный стол</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
