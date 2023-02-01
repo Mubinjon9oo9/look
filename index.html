@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 <div id="myPopup">
@@ -27,7 +28,7 @@
         </form>
     </div>
 </div>
-<img src="images/1.png" class="bg">
+<img src="images/1.png" class="bg" alt="bg1">
 <div class="section overlay">
     <div class="col">
         <h2 class="titles">детский день рождения</h2>
@@ -45,11 +46,96 @@
 <img src="images/2.png" class="bg">
 <div class="section overlay">
     <div class="col">
-        <h2 class="titles">детский день рождения</h2>
+        <h2 class="titles">формат праздника</h2>
         <ul>
-            <li class="texts">Площадка</li>
-            <li class="texts">Программа / активная часть</li>
-            <li class="texts">Праздничный стол</li>
+            <li class="texts">Квест-вечеринка</li>
+            <li class="texts">Телешоу // Блоггер-пати</li>
+            <li class="texts">Арт-вечеринка “Голодные игры”</li>
+            <li class="texts">Арт-вечеринка “Живые полотна”</li>
+            <li class="texts">Хип-хоп вечеринка!</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">выбрать формат</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="images/3.png" class="bg">
+            <div class="section">
+                <h2 class="titles">Квест-вечеринка</h2>
+                <ul>
+                    <li class="texts">Легенда на выбор</li>
+                    <li class="texts">Ведущие в образах героев из легенды</li>
+                    <li class="texts">Игровой реквизит / 5-6 станций</li>
+                    <li class="texts">Квест / 60 мин.</li>
+                    <li class="texts">Командная работа гостей</li>
+                    <li class="texts">Общая объединяющая цель</li>
+                </ul>
+                <button class="btn" onclick="func()">
+                    <h3 class="btext">от 18 500 руб.</h3>
+                    <p class="btext1">+7(931)337-15-20</p>
+                </button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/3.png" class="bg">
+            <div class="section">
+                <h2 class="titles">Квест-вечеринки</h2>
+                <ul>
+                    <li class="texts">Легенда на выбор</li>
+                    <li class="texts">Ведущие в образах героев из легенды</li>
+                    <li class="texts">Игровой реквизит / 5-6 станций</li>
+                    <li class="texts">Квест / 60 мин.</li>
+                    <li class="texts">Командная работа гостей</li>
+                    <li class="texts">Общая объединяющая цель</li>
+                </ul>
+                <button class="btn" onclick="func()">
+                    <h3 class="btext">от 18 500 руб.</h3>
+                    <p class="btext1">+7(931)337-15-20</p>
+                </button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/3.png" class="bg">
+            <div class="section">
+                <h2 class="titles">Квест-вечеринка!</h2>
+                <ul>
+                    <li class="texts">Легенда на выбор</li>
+                    <li class="texts">Ведущие в образах героев из легенды</li>
+                    <li class="texts">Игровой реквизит / 5-6 станций</li>
+                    <li class="texts">Квест / 60 мин.</li>
+                    <li class="texts">Командная работа гостей</li>
+                    <li class="texts">Общая объединяющая цель</li>
+                </ul>
+                <button class="btn" onclick="func()">
+                    <h3 class="btext">от 18 500 руб.</h3>
+                    <p class="btext1">+7(931)337-15-20</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<img src="images/5.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">телешоу // блоггер пати</h2>
+        <ul>
+            <li class="texts">Игровое табло</li>
+            <li class="texts">Ведущий в образе героя</li>
+            <li class="texts">Дети в роли гостей Телешоу!</li>
+            <li class="texts">Различные испытания и командная работа</li>
+            <li class="texts">// Батлы и Challenge</li>
         </ul>
         <button class="btn" onclick="func()">
             <h3 class="btext">Нужен праздник</h3>
@@ -57,6 +143,154 @@
         </button>
     </div>
 </div>
+<img src="images/6.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">Голодные игры</h2>
+        <ul>
+            <li class="texts">Шеф-повар</li>
+            <li class="texts">Основное блюдо на выбор, тортик и напиток</li>
+            <li class="texts">Мастер-класс по приготовлению 2-3 блюд</li>
+            <li class="texts">Праздничный стол готов!)</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/7.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">живые полотна</h2>
+        <ul>
+            <li class="texts">Художник-наставник</li>
+            <li class="texts">Эскиз / тематика на выбор детей!</li>
+            <li class="texts">Мастер-класс по рисованию картины</li>
+            <li class="texts">У каждого гостя - свой шедевр!)</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/8-1.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">hip-hop вечеринка</h2>
+        <ul>
+            <li class="texts">Танцевальное шоу, брейк-данс</li>
+            <li class="texts">Мастер-класс по Граффити</li>
+            <li class="texts">Танцевальный батл!</li>
+            <li class="texts">Ведущие и DJ - настоящие питерские MC!!</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/8-2.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">сценарий праздника</h2>
+        <ul>
+            <li class="texts">Welcome / знакомство с гостями</li>
+            <li class="texts">Активная / игровая часть</li>
+            <li class="texts">Праздничный стол и поздравления</li>
+            <li class="texts">Танцевальная программа</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/9.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">ГДЕ ПРОХОДИТ НАШ ПРАЗДНИК?</h2>
+        <p>ЧЕРНАЯ КЛАССИКА  (70 м2)</p>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/18.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">состав праздника</h2>
+        <ul>
+            <li class="texts">Координатор</li>
+            <li class="texts">Ведущие</li>
+            <li class="texts">Тематика или легенда</li>
+            <li class="texts">Программа</li>
+            <li class="texts">Лофт</li>
+            <li class="texts">Музыкальное сопровождение</li>
+            <li class="texts">Столы и стулья</li>
+        </ul>
+        <h2 class="titles">чем украсить?</h2>
+        <ul>
+            <li class="texts">Фото-зона Press wall</li>
+            <li class="texts">Фотограф</li>
+            <li class="texts">Видеограф</li>
+            <li class="texts">ШОУ</li>
+            <li class="texts">Световое украшение зала</li>
+            <li class="texts">Кейтеринг (можно со своим)</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/19.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">шоу-программы в дополнение или в основу праздника</h2>
+        <ul>
+            <li class="texts">Научное шоу</li>
+            <li class="texts">Мыльное шоу с погружением</li>
+            <li class="texts">Иллюзионист</li>
+            <li class="texts">Тесла шоу</li>
+            <li class="texts">Танцевальное шоу / акробатика / брейк-данс</li>
+        </ul>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/20.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">контакты</h2>
+        <p><a href="tel:+79313371520">+7 931 337 15 20</a><br/>
+            <a href="tel:+78126678700">+7 812 667 87 00</a><br/>
+            Михайлова 21<br/>
+            <br/>Пожалуйста, сообщите о своем<br/> визите заранее!)<br/>
+            <br/>
+            Приглашаем вас на встречу и просмотр площадки!</p>
+        <button class="btn" onclick="func()">
+            <h3 class="btext">Нужен праздник</h3>
+            <p class="btext1">Получить условия</p>
+        </button>
+    </div>
+</div>
+<img src="images/21.png" class="bg">
+<div class="section overlay">
+    <div class="col">
+        <h2 class="titles">Affect event</h2>
+        <ul>
+            <li class="texts">Площадка для мероприятия</li>
+            <li class="texts">Праздники и мероприятия в игровом формате</li>
+            <li class="texts">События для взрослых и для детей.</li>
+        </ul>
+    </div>
+</div>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
