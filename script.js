@@ -1,7 +1,3 @@
-$(document).ready(function (){
-    $('.slider').slick();
-});
-
 function func(){
     document.getElementById('myPopup').style.display="table-cell"
     document.getElementById('myPopup').style.verticalAlign="middle"
@@ -37,5 +33,23 @@ function se(){
         document.getElementById('myPopup').style.display = "none"
         window.alert("Мы отравили сообщение с подтверждением вам на почту!")
         return false
+    }
+}
+var a = 0
+function next(){
+    a+=1
+    document.getElementsByClassName("slide")[a].style.display = "inline"
+    document.getElementsByClassName("slide")[a-1].style.display = "none";
+    if (document.getElementsByClassName("slide").length<=a){
+        a=document.getElementsByClassName("slide").length-1;
+    }
+
+}
+function prev(){
+    a-=1
+    document.getElementsByClassName("slide")[a].style.display = "inline";
+    document.getElementsByClassName("slide")[a-1].style.display = "none";
+    if (a<=0){
+        a=0;
     }
 }

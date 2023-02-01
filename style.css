@@ -84,10 +84,6 @@ li:before{
 .btext1{
     font-size: 16px;
 }
-.swiper {
-    width: 100vw;
-    height: 100vh;
-}
 #myPopup{
     height: 100vh;
     width: 100vw;
@@ -194,7 +190,51 @@ li:before{
     text-align: center;
     display: none;
 }
+.next_btn{
+    background: url("images/next.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: #FFC700 solid 2px;
+    border-radius: 20px;
+    right: 5%;
+    margin-top: 15% ;
+    cursor: pointer;
+}
+.slide:nth-child(1){
+    display: inline;
+    transform: translateY(100%);
+    transition: 2s ease;
+}
+.slide:nth-child(2), .slide:nth-child(3), .slide:nth-child(4), .slide:nth-child(5), .slide:nth-child(6), .slide:nth-child(7) .slide:nth-child(8){
+    display: none;
+    transform: translateY(100%);
+    animation: slides 3s ease forwards;
+}
+@keyframes slides {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 
+}
+.prev_btn{
+    background: url("images/left-arrow.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: #FFC700 solid 2px;
+    border-radius: 20px;
+    margin-top: 15% ;
+    left: 5%;
+    cursor: pointer;
+}
 @media (max-width:849px) {
     .bg{
         width: auto;
