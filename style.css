@@ -208,10 +208,17 @@ li:before{
     transform: translateY(100%);
     transition: 2s ease;
 }
-.slide:nth-child(2), .slide:nth-child(3), .slide:nth-child(4), .slide:nth-child(5), .slide:nth-child(6), .slide:nth-child(7) .slide:nth-child(8){
+.slide:nth-child(2), .slide:nth-child(3), .slide:nth-child(4), .slide:nth-child(5), .slide:nth-child(6), .slide:nth-child(7), .slide:nth-child(8){
     display: none;
     transform: translateY(100%);
     animation: slides 3s ease forwards;
+}
+.text-l{
+    max-width: 80%;
+    color: #ffffff;
+    font-size: 34px;
+    padding-left: 20%;
+    line-height: 1.3em;
 }
 @keyframes slides {
     0%{

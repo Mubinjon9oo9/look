@@ -48,7 +48,7 @@ function next(){
 function prev(){
     a-=1
     document.getElementsByClassName("slide")[a].style.display = "inline";
-    document.getElementsByClassName("slide")[a-1].style.display = "none";
+    document.getElementsByClassName("slide")[a+1].style.display = "none";
     if (a<=0){
         a=0;
     }
