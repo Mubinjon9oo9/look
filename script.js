@@ -36,19 +36,38 @@ function se(){
     }
 }
 var a = 0
-function next(){
+function next(el){
     a+=1
     document.getElementsByClassName("slide")[a].style.display = "inline"
     document.getElementsByClassName("slide")[a-1].style.display = "none";
-    if (document.getElementsByClassName("slide").length<=a){
-        a=document.getElementsByClassName("slide").length-1;
+    if (el-1<=a){
+        a=-1;
     }
 
 }
-function prev(){
+function prev(el){
     a-=1
     document.getElementsByClassName("slide")[a].style.display = "inline";
     document.getElementsByClassName("slide")[a+1].style.display = "none";
+    console.log(a)
+    if (a<=0){
+        a=0;
+    }
+}
+function nexts(el){
+    a+=1
+    document.getElementsByClassName("slides")[a].style.display = "inline"
+    document.getElementsByClassName("slides")[a-1].style.display = "none";
+    if (el-1<=a){
+        a=-1;
+    }
+
+}
+function prevs(el){
+    a-=1
+    document.getElementsByClassName("slides")[a].style.display = "inline";
+    document.getElementsByClassName("slides")[a+1].style.display = "none";
+    console.log(a)
     if (a<=0){
         a=0;
     }
